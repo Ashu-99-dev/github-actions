@@ -1,0 +1,17 @@
+# Controls when the action will run. Triggers the workflow on push some to main or prodution branches
+name: "Hello worklow"
+
+on:
+    push:
+        branches:
+            - main
+            - prodution
+
+jobs:
+    hello_word:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Print hello world"
+              run: echo "Hello world"
+
+
