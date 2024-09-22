@@ -7,6 +7,10 @@ on:
   pull_request: # Event: whenever a pull reuest is made to the repository
     branches:
       - master
+
+  workflow_dispatch:
+
+  
 jobs: 
   on-push:  # job nam
     if: github.event_name == 'push'
